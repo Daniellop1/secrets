@@ -7,7 +7,7 @@ Example:
 ```js
 
 export const generateAuthSecret = () => fetch(
-  'https://secrets.dglobal.workers.dev/32',
+  'https://secrets.dglobal.eu.org/32',
   { cache: 'no-cache' },
 ).then(res => res.text());
 
@@ -17,6 +17,6 @@ You can also specify the length of the secret string as follows:
 
 | URL  | Length  |
 | ------------- | ------------- |
-| https://secrets.dglobal.workers.dev/  | 32  |
-| https://secrets.dglobal.workers.dev/64  | 64  |
-| https://secrets.dglobal.workers.dev/[number]  | number  |
+| https://secrets.dglobal.eu.org/  | 32  |
+| https://secrets.dglobal.eu.org/64  | 64  |
+| https://secrets.dglobal.eu.org/[number]  | number  |
